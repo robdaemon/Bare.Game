@@ -7,7 +7,7 @@
 (********************************************************)
 
 { <include docs/bare.types.txt> }
-unit Bare.Types;
+unit Bare.Types; 
 
 {$i bare.inc}
 
@@ -884,7 +884,7 @@ procedure TObjectList<TItem>.DeleteItem(var Item: TItem);
 begin
   if FOwnsObjects then
     Item.Free;
-  Item := nil;
+  Item := TItem(nil);
 end;
 
 function TObjectList<TItem>.RequiresDelete: Boolean;
